@@ -12,9 +12,9 @@ mat4 buildRotateX(float rad)
 
 mat4 buildRotateY(float rad)
 {
-	mat4 yrot = mat4(cos(rad), 0.0, -sin(rad), 0.0,
+	mat4 yrot = mat4(cos(rad), 0.0, sin(rad), 0.0,
 					 0.0, 1.0, 0.0, 0.0,
-					 sin(rad), 0.0, cos(rad), 0.0,
+					 -sin(rad), 0.0, cos(rad), 0.0,
 					 0.0, 0.0, 0.0, 1.0);
 	return yrot;
 }
